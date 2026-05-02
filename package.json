@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
+    "prestart": "wrangler types",
+    "start": "wrangler dev --env-file .env",
+    "predev": "wrangler types",
+    "dev": "wrangler dev --env-file  .env",
+    "predeploy": "wrangler types",
+    "deploy": "wrangler deploy --secrets-file .env",
     "test": "vitest",
     "cf-typegen": "wrangler types"
   },
