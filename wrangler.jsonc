@@ -30,6 +30,15 @@
       "enabled": true,
     },
   },
+  "workers_dev": false,
+  "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "m2w.ccepr.dev",
+      "custom_domain": true,
+      "enabled": true,
+    },
+  ],
   "upload_source_maps": true,
   "compatibility_flags": ["nodejs_compat"],
   "placement": {
