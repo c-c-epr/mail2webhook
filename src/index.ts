@@ -30,12 +30,13 @@ export default {
   },
   async fetch(request: Request, env: Env, ctx: ExecutionContext) {
     const params = new URL(request.url).searchParams;
+    const headers = new Headers(request.headers);
 
     if (request.method !== "POST") {
       return new Response("Method Not Allowed", { status: 405 });
     }
 
-    if (params.get("key") !== env.KEY) {
+    if (headers.get("X-API-Key") !== env.KEY) {
       return new Response("Unauthorized", { status: 401 });
     }
     const suffix = params.get("suffix");
