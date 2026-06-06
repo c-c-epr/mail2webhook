@@ -64,13 +64,7 @@ npm run deploy
 - `forward`: 轉發地址。
 - `webhook_url`: Webhook 地址。
 
-## 測試
 
-使用 Vitest 進行測試：
-
-```bash
-npm run test
-```
 
 ## API
 

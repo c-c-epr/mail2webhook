@@ -9,15 +9,12 @@
     "dev": "wrangler dev --env-file  .env",
     "predeploy": "wrangler types",
     "deploy": "wrangler deploy --secrets-file .env",
-    "test": "vitest",
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.15.2",
     "@types/node": "^25.6.0",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
-    "vitest": "~4.1.5",
     "wrangler": "^4.87.0"
   }
 }
