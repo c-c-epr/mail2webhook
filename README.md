@@ -64,8 +64,6 @@ npm run deploy
 - `forward`: 轉發地址。
 - `webhook_url`: Webhook 地址。
 
-
-
 ## API
 
 ### 電子郵件處理
